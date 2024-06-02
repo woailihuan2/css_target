@@ -1,0 +1,86 @@
+<!--
+ * @Author: LAPTOP-PPCDBO7S\Yimso 285715057@qq.com
+ * @Date: 2024-06-01 18:20:14
+ * @LastEditors: LAPTOP-PPCDBO7S\Yimso 285715057@qq.com
+ * @LastEditTime: 2024-06-02 10:39:44
+ * @FilePath: \Web Development\CSS Site\targetTest.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>targetTest</title>
+    <style type="text/css">
+      html,
+      body,
+      h1,
+      section,
+      nav,
+      div {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      html {
+        font-size: 16px;
+      }
+      .page_title {
+        font: bold 28px/2em "Cooper", Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .show_link {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .link_item {
+        border: 1px solid #acdef3;
+        color: #9564e0;
+        font: 400 16px/1.5em "Fira code", Arial, Helvetica, sans-serif;
+        padding: 0 0.5em;
+        margin-left: 0.8em;
+        border-radius: 5px;
+      }
+      .show_list {
+        width: 700px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+      }
+      .show_item {
+        width: 100px;
+        height: 100px;
+        background: #73c1e2;
+        border-radius: 10px;
+        margin-left: 10px;
+        transition: flex 0.5s ease-in-out;
+      }
+      .show_item:target {
+        flex: 1;
+        background: #437fef;
+      }
+      .item_1 {
+        margin-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="page_title">target test</h1>
+    <section class="show_box">
+      <nav class="show_link">
+        <a class="link_item item_1" href="#d_1">1</a>
+        <a class="link_item" href="#d_2">2</a>
+        <a class="link_item" href="#d_3">3</a>
+      </nav>
+      <section class="show_list">
+        <div class="show_item item_1" id="d_1"></div>
+        <div class="show_item" id="d_2"></div>
+        <div class="show_item" id="d_3"></div>
+      </section>
+    </section>
+  </body>
+</html>
